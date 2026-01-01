@@ -91,6 +91,25 @@
         .font-signature {
             font-family: 'Birthstone Bounce', cursive;
         }
+
+        /* Video Resolution Fixes */
+        video {
+            image-rendering: -webkit-optimize-contrast;
+            object-fit: contain;
+            background: #000;
+        }
+
+        .video-container.horizontal {
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-container.vertical {
+            aspect-ratio: 9 / 16;
+        }
+
+        .video-container video {
+            opacity: 1 !important;
+        }
     </style>
 </head>
 
@@ -552,13 +571,13 @@
             <div id="video-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/14.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -566,13 +585,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted title="videos/7.mp4">
                         <source src="videos/7.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -580,13 +599,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/21.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -594,13 +613,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/10.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -608,13 +627,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/1.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -622,13 +641,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/12.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -636,13 +655,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/19.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -650,13 +669,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/5.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -664,13 +683,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/17.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -678,13 +697,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/9.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -692,13 +711,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/22.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -706,13 +725,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/4.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -720,13 +739,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/15.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -734,13 +753,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/6.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -748,13 +767,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/20.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -762,13 +781,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/11.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -776,13 +795,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/18.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -790,13 +809,13 @@
 
                 <!-- Video Portfolio Item -->
                 <div
-                    class="relative group rounded-2xl overflow-hidden bg-black aspect-[4/5] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
-                    <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" loop
-                        playsinline>
+                    class="relative group rounded-2xl overflow-hidden bg-black  shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer video-container">
+                    <video class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        loop playsinline muted>
                         <source src="videos/16.mp4" type="video/mp4">
                     </video>
                     <div
-                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay">
+                        class="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 play-overlay bg-black/20 group-hover:bg-transparent">
                         <span
                             class="material-symbols-outlined text-white text-6xl opacity-70 group-hover:opacity-100 group-hover:scale-110">play_circle</span>
                     </div>
@@ -1016,13 +1035,13 @@
                             </div>
 
                             <!-- Location -->
-                            <div class="flex items-center gap-6 group">
+                            <!-- <div class="flex items-center gap-6 group">
                                 <span
                                     class="material-symbols-outlined text-4xl text-white/40 group-hover:text-primary transition-colors">location_on</span>
                                 <span class="text-2xl md:text-3xl font-bold text-white/80 tracking-tight">
                                     Deira, Zina Building, Dubai, United Arab Emirates
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -1032,7 +1051,7 @@
 
                 <!-- Image Side (Right) -->
                 <div class="flex-1 relative w-full lg:w-1/2 flex justify-center lg:justify-end">
-                    <div class="relative w-[300px] md:w-[500px] aspect-[4/5] lg:aspect-[3/4] group">
+                    <div class="relative w-[300px] md:w-[500px]  lg:aspect-[3/4] group">
                         <!-- Editorial Frames -->
                         <div
                             class="absolute inset-0 border-2 border-[#d0cdc2]/40 -translate-x-8 -translate-y-8 rounded-2xl pointer-events-none transition-transform duration-500 group-hover:-translate-x-6 group-hover:-translate-y-6">
@@ -1094,57 +1113,17 @@
     </div>
 
     <script>
-        document.querySelectorAll('.video-container').forEach(container => {
-            const video = container.querySelector('video');
-            const overlay = container.querySelector('.play-overlay');
-
-            container.addEventListener('click', () => {
-                if (video.paused) {
-                    // Pause all other playing videos first (optional but recommended)
-                    document.querySelectorAll('video').forEach(v => {
-                        if (v !== video) {
-                            v.pause();
-                            v.parentElement.querySelector('.play-overlay').style.opacity = '1';
-                        }
-                    });
-
-                    video.play();
-                    overlay.style.opacity = '0';
-                } else {
-                    video.pause();
-                    overlay.style.opacity = '1';
-                }
-            });
-
-            // Ensure overlay shows if video reaches end (for non-looping videos, though these loop)
-            video.addEventListener('ended', () => {
-                overlay.style.opacity = '1';
-            });
-        });
-
-        // Shuffle Videos Logic
-        function shuffleVideos() {
-            const grid = document.getElementById('video-grid');
-            if (grid) {
-                const videos = Array.from(grid.children);
-                for (let i = videos.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    grid.appendChild(videos[j]);
-                }
-            }
-        }
-
-        // Run shuffle on load
-        window.addEventListener('DOMContentLoaded', shuffleVideos);
-
-        // Image Lightbox Logic
+        // Shared Lightbox Logic
         const lightbox = document.createElement('div');
         lightbox.id = 'lightbox';
         lightbox.className = 'fixed inset-0 z-[100] hidden bg-black/95 items-center justify-center p-4 cursor-zoom-out';
         lightbox.innerHTML = `
-            <div class="relative max-w-5xl w-full h-full flex items-center justify-center">
-                <img id="lightbox-img" src="" alt="Full Screen Reach" class="max-w-full max-h-full object-contain shadow-2xl transition-transform duration-300 transform scale-95 opacity-0">
-                <button id="close-lightbox" class="absolute top-4 right-4 text-white hover:text-primary transition-colors">
+            <div class="relative max-w-5xl w-full h-full flex items-center justify-center pointer-events-none">
+                <img id="lightbox-img" src="" alt="Value" class="hidden max-w-full max-h-full object-contain shadow-2xl transition-all duration-300 transform scale-95 opacity-0 pointer-events-auto">
+                <video id="lightbox-video" controls class="hidden max-w-full max-h-full object-contain shadow-2xl transition-all duration-300 transform scale-95 opacity-0 pointer-events-auto">
+                    <source src="" type="video/mp4">
+                </video>
+                <button id="close-lightbox" class="absolute top-4 right-4 text-white hover:text-primary transition-colors pointer-events-auto">
                     <span class="material-symbols-outlined text-4xl">close</span>
                 </button>
             </div>
@@ -1152,32 +1131,100 @@
         document.body.appendChild(lightbox);
 
         const lightboxImg = document.getElementById('lightbox-img');
-        const closeBtn = document.getElementById('close-lightbox');
+        const lightboxVideo = document.getElementById('lightbox-video');
 
-        document.querySelectorAll('.analysis-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const imgSrc = item.querySelector('img').src;
-                lightboxImg.src = imgSrc;
-                lightbox.classList.remove('hidden');
-                lightbox.classList.add('flex');
-                setTimeout(() => {
-                    lightboxImg.classList.remove('scale-95', 'opacity-0');
-                    lightboxImg.classList.add('scale-100', 'opacity-100');
-                }, 10);
-                document.body.style.overflow = 'hidden';
-            });
-        });
+        const openImageLightbox = (src) => {
+            lightboxImg.src = src;
+            lightboxImg.classList.remove('hidden');
+            lightboxVideo.classList.add('hidden');
+            showLightbox();
+        };
+
+        const openVideoLightbox = (src) => {
+            const videoSource = lightboxVideo.querySelector('source');
+            videoSource.src = src;
+            lightboxVideo.load();
+            lightboxVideo.classList.remove('hidden');
+            lightboxImg.classList.add('hidden');
+            showLightbox();
+            lightboxVideo.play();
+        };
+
+        const showLightbox = () => {
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            setTimeout(() => {
+                const activeElement = lightboxImg.classList.contains('hidden') ? lightboxVideo : lightboxImg;
+                activeElement.classList.remove('scale-95', 'opacity-0');
+                activeElement.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        };
 
         const closeLightbox = () => {
-            lightboxImg.classList.remove('scale-100', 'opacity-100');
-            lightboxImg.classList.add('scale-95', 'opacity-0');
+            const activeElement = lightboxImg.classList.contains('hidden') ? lightboxVideo : lightboxImg;
+            activeElement.classList.remove('scale-100', 'opacity-100');
+            activeElement.classList.add('scale-95', 'opacity-0');
+            if (!lightboxVideo.classList.contains('hidden')) {
+                lightboxVideo.pause();
+            }
             setTimeout(() => {
                 lightbox.classList.add('hidden');
                 lightbox.classList.remove('flex');
                 lightboxImg.src = '';
+                lightboxVideo.querySelector('source').src = '';
             }, 300);
             document.body.style.overflow = '';
         };
+
+        // Video Grid Logic
+        function initVideos() {
+            document.querySelectorAll('.video-container').forEach(container => {
+                const video = container.querySelector('video');
+                const overlay = container.querySelector('.play-overlay');
+
+                // Auto-detect aspect ratio for grid
+                if (video.readyState >= 1) {
+                    setVideoRatio(video, container);
+                } else {
+                    video.addEventListener('loadedmetadata', () => setVideoRatio(video, container));
+                }
+
+                // Hover to preview
+                container.addEventListener('mouseenter', () => {
+                    video.play().catch(e => console.log('Autoplay blocked'));
+                    overlay.style.opacity = '0';
+                });
+                container.addEventListener('mouseleave', () => {
+                    video.pause();
+                    overlay.style.opacity = '1';
+                    video.currentTime = 0;
+                });
+
+                // Click to open Video Lightbox
+                container.addEventListener('click', () => {
+                    const videoSrc = video.querySelector('source').src;
+                    openVideoLightbox(videoSrc);
+                });
+            });
+        }
+
+        function setVideoRatio(video, container) {
+            const ratio = video.videoWidth / video.videoHeight;
+            if (ratio > 1) {
+                container.style.aspectRatio = "16/9";
+                container.classList.add('horizontal');
+            } else {
+                container.style.aspectRatio = "9/16";
+                container.classList.add('vertical');
+            }
+        }
+
+        document.querySelectorAll('.analysis-item').forEach(item => {
+            item.addEventListener('click', () => {
+                openImageLightbox(item.querySelector('img').src);
+            });
+        });
 
         lightbox.addEventListener('click', (e) => {
             if (e.target === lightbox || e.target.closest('#close-lightbox')) {
@@ -1189,6 +1236,88 @@
             if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
                 closeLightbox();
             }
+        });
+
+        // Logic to separate videos into distinct rows based on orientation
+        function organizeVideos() {
+            const mainGrid = document.getElementById('video-grid');
+            if (!mainGrid) return;
+
+            const items = Array.from(mainGrid.children);
+            const verticalItems = [];
+            const horizontalItems = [];
+
+            items.forEach(item => {
+                const video = item.querySelector('video');
+                const ratio = video.videoWidth / video.videoHeight || 1;
+                if (ratio < 1) {
+                    verticalItems.push(item);
+                } else {
+                    horizontalItems.push(item);
+                }
+            });
+
+            // Clear main grid to rebuild
+            mainGrid.innerHTML = '';
+            mainGrid.className = 'space-y-16'; // Change from grid to stack of sections
+
+            if (verticalItems.length > 0) {
+                const vSection = document.createElement('div');
+                vSection.innerHTML = `
+                    <h3 class="text-sm font-bold mb-6 text-primary uppercase tracking-[0.3em] opacity-60">Shorts & Reels</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+                `;
+                const vGrid = vSection.querySelector('div');
+                verticalItems.forEach(item => {
+                    item.style.aspectRatio = "9/16";
+                    vGrid.appendChild(item);
+                });
+                mainGrid.appendChild(vSection);
+            }
+
+            if (horizontalItems.length > 0) {
+                const hSection = document.createElement('div');
+                hSection.innerHTML = `
+                    <h3 class="text-sm font-bold mb-6 text-primary uppercase tracking-[0.3em] opacity-60 mt-12">Featured Segments</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+                `;
+                const hGrid = hSection.querySelector('div');
+                horizontalItems.forEach(item => {
+                    item.style.aspectRatio = "16/9";
+                    hGrid.appendChild(item);
+                });
+                mainGrid.appendChild(hSection);
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            initVideos();
+
+            // Wait for metadata to ensure correct sorting
+            const videos = document.querySelectorAll('.video-container video');
+            let loaded = 0;
+            const total = videos.length;
+
+            if (total === 0) {
+                organizeVideos();
+                return;
+            }
+
+            const checkDone = () => {
+                loaded++;
+                if (loaded === total) organizeVideos();
+            };
+
+            videos.forEach(v => {
+                if (v.readyState >= 1) checkDone();
+                else v.addEventListener('loadedmetadata', checkDone);
+            });
+
+            // Fallback
+            setTimeout(() => {
+                if (loaded < total) organizeVideos();
+            }, 3000);
         });
     </script>
 </body>
